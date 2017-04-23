@@ -1,12 +1,10 @@
 {
-  "name": "freelancer",
-  "title": "Freelancer",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/freelancer",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  "name": "zhastdoit",
+  "version": "1.0.0",
+  "description": "Personal Homepage",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
@@ -21,8 +19,25 @@
     "gulp-uglify": "^1.5.4",
     "jquery": "^1.11.3"
   },
+  "scripts": {
+    "test": "testcommand"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
-  }
+    "url": "git+https://github.com/zhastdoit/zhastdoit.github.io.git"
+  },
+  "keywords": [
+    "charles",
+    "zha",
+    "cs",
+    "front-end",
+    "java",
+    "developer"
+  ],
+  "author": "Xiaojie (Charles)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhastdoit/zhastdoit.github.io/issues"
+  },
+  "homepage": "https://github.com/zhastdoit/zhastdoit.github.io#readme"
 }
