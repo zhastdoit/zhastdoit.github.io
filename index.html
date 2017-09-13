@@ -43,6 +43,12 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#page-top">Xiaojie Zha</a>
+                <div id = "hideAudio">
+                    <audio id="audioElement" controls>
+                      <source src="docs/10_Every_breath_you_take.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,11 +78,32 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="" width="200px">
+                    <img class="img-responsive img-circle" src="img/profile.png" alt="" width="200px">
                     <div class="intro-text">
                         <h1 class="name">Hi, I'm Charles Zha.</h1>
                         <hr class="star-light">
-                        <span class="skills">Web Developer - Back End Developer - Photographer</span>
+                        <span class="skills">Web Developer - Software Engineer - Photographer</span>
+                    </div>
+                    <span class="skills">Software Engineer Intern at Li Creative Technologies Inc.</span>
+                    <div class="skills">
+    <!--                     <h3>Around the Web</h3> -->
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/xiaojie.zha.1" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://stackoverflow.com/users/7896243/charles-zha" class="btn-social btn-outline"><span class="sr-only"></span><i class="fa fa-fw fa-stack-overflow"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/xiaojie-zha/" class="btn-social btn-outline"><span class="sr-only">LinkedIn</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/zhastdoit" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/zhastdoit" class="btn-social btn-outline"><span class="sr-only">Instagram</span><i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -168,16 +195,16 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Through projects and internships, I gained a wide range of experience in both front-end and back-end projects.</p>
+                    <p>I mainly focus on building Front-End applications using MEAN Stack together with Back-End development using Java and Python.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Right now I'm seeking Full Stack and Software Engineering full-time positions starting from summer 2018.</p>
+                    <p>Right now I'm actively seeking Software Engineering full-time positions starting from May 2018.</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="docs/Resume-XiaojieZha.pdf" download class="btn btn-lg btn-outline">
                         <i class="fa fa-download"></i> Download Resume
                     </a>
-                </div>ß
+                </div>
             </div>
         </div>
     </section>
@@ -187,31 +214,11 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-sm-6">
                         <h3>Location</h3>
                         <p>Brooklyn, NY</p>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/xiaojie.zha.1" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://stackoverflow.com/users/7896243/charles-zha" class="btn-social btn-outline"><span class="sr-only"></span><i class="fa fa-fw fa-stack-overflow"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/xiaojie-zha/" class="btn-social btn-outline"><span class="sr-only">LinkedIn</span><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/zhastdoit" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/zhastdoit" class="btn-social btn-outline"><span class="sr-only">Instagram</span><i class="fa fa-fw fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4" id="contact">
+                    <div class="footer-col col-sm-6" id="contact">
                         <h3>Contact Me</h3>
                         <p>E-mail: <a href="#" target="_top">xz1776[@]nyu.edu</a></p>
                     </div>
@@ -222,7 +229,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Xiaojie Zha 2017
+                        &copy; Xiaojie Zha 2017
                     </div>
                 </div>
             </div>
@@ -486,6 +493,14 @@
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
 
+    <script type="text/javascript">
+    window.onload = function() {
+        var audioElement = document.getElementById("audioElement");
+        audioElement.load();
+        audioElement.play();
+        audioElement.volume = 0.4;
+    };
+    </script>
 </body>
 
 </html>
